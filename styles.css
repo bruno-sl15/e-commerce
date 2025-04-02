@@ -209,7 +209,39 @@ header {
     font-size: .9rem;
 }
 
+/* Tabs */
+.product-specs {
+    margin-top: 40px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.tabs {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    border-bottom: 2px solid #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.tabs li {
+    font-weight: bold;
+    cursor: pointer;
+    color: #777;
+}
+
+.specs-content p {
+    font-size: 1rem;
+    color: #b0b0b0;
+    margin: 10px 0;
+}
+
 /* Resposividade */
+
+/* Tablet */
 @media (max-width: 1024px) {
     .top-bar {
         flex-direction: column;
@@ -219,5 +251,20 @@ header {
 
     .logo h1 {
         margin: 0;
+    }
+
+    .product-details {
+        flex-direction: column;
+    }
+}
+
+/* Celular */
+@media (max-width: 450px) {
+    .buttons {
+        flex-direction: column;
+    }
+
+    .tabs li {
+        font-size: .8rem;
     }
 }
